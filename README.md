@@ -47,7 +47,7 @@ Lo que hace el programa es multiplicar lo que esta en 0xB (3) y 0xC (6).
 ```
 Hay 2 progrmas.
 En el primer programa desde 0x1 hasta 0x7.Y 0x1, 0x2, 0x3 y 0x4 almacenan instrucciones. Y 0x5, 0x6, 0x7 almacenan datos. 
-En el segundo programa desde 0x7 a 0xE. Y 0x7, 0x8, 0x9, 0xA, 0xB, 0xC almacenan instrucciones. Y 0xD, 0xC almacenan datos.
+En el segundo programa desde 0x7 a 0xE. Y 0x7, 0x8, 0x9, 0xA, 0xB, 0xC almacenan instrucciones. Y 0xD, 0xE almacenan datos.
 
 
 3. Para el primer programa del ejercicio anterior. ¿Qué líneas de control se activan para cada instrucción? ¿Cuál es el valor del bus de datos y de instrucciones en cada instrucción? Completen la siguiente tabla, agreguen las filas que sean necesarias.
