@@ -65,17 +65,17 @@ En el segundo programa desde 0x7 a 0xE. Y 0x7, 0x8, 0x9, 0xA, 0xB, 0xC almacenan
 4. El siguiente programa suma los números que encuentra en la entrada hasta que aparece un cero, y luego envía el resultado a la salida. Traducirlo a ensamblador y a C siguiendo el ejemplo de las primeras dos líneas.
 
 ```
-0x1:  A0   #  lw 0  #
-0x2:  CE   #  sw E  #  int sum = 0;
-0x3:  AF
-0x4:  E9
-0x5:  2E
-0x6:  CE
-0x7:  A0
-0x8:  E3
-0x9:  AE
-0xA:  CF
-0xB:  00
+0x1:  A0   #  lw 0   #
+0x2:  CE   #  sw E   #  int sum = 0;
+0x3:  AF   #  lw F   #  int sum = 0;
+0x4:  E9   #  bze 9  #  int sum = 14;
+0x5:  2E   #  add E  #  int sum = 28;
+0x6:  CE   #  sw E   #  int sum = 28; 42
+0x7:  A0   #  lw 0   #  int sum = 28; 42
+0x8:  E3   #  bze 3  #  int sum = 0; 42 
+0x9:  AE   #  lw E   #  int sum = 14;
+0xA:  CF   #  sw F   #  int sum = 29;
+0xB:  00   #  halt 0 #  int sum = 29;
 ```
 
 5. Una mejora que le podríamos hacer a esta computadora es duplicar la cantidad de memoria, pasar de 16 bytes a 32 bytes. ¿Cómo lo harían manteniendo la longitud de las instrucciones en 8 bits? ¿Qué partes de la CPU habría que modificar y cómo?
