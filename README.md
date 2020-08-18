@@ -59,12 +59,12 @@ En el segundo programa desde 0x7 a 0xE. Y 0x7, 0x8, 0x9, 0xA, 0xB, 0xC almacenan
 |---|---|--------------|---|---|
 |A5 |0  |IR en         |A5 |1  |
 |A5 |1  |R en, addr mux|08 |5  |
-|26 |0  |              |   |   |
-
-
-
-
-
+|26 |0  |IR en         |26 |2  |
+|26 |1  |R en, addr mux|05 |6  |
+|C7 |0  |IR en         |C7 |3  |
+|C7 |1  |R en, addr mux|0D |7  |
+|00 |0  |IR en         |0  |4  |
+|00 |1  |R en, addr mux|0  |0  |
 4. El siguiente programa suma los números que encuentra en la entrada hasta que aparece un cero, y luego envía el resultado a la salida. Traducirlo a ensamblador y a C siguiendo el ejemplo de las primeras dos líneas.
 
 ```
