@@ -45,8 +45,11 @@ Lo que hace el programa es multiplicar lo que esta en 0xB (3) y 0xC (6).
 0x8   A7 6D 2E C7
 0xc   00 FF 01 00
 ```
+
 Hay 2 progrmas.
+
 En el primer programa desde 0x1 hasta 0x7.Y 0x1, 0x2, 0x3 y 0x4 almacenan instrucciones. Y 0x5, 0x6, 0x7 almacenan datos. 
+
 En el segundo programa desde 0x7 a 0xE. Y 0x7, 0x8, 0x9, 0xA, 0xB, 0xC almacenan instrucciones. Y 0xD, 0xE almacenan datos.
 
 
@@ -79,3 +82,7 @@ En el segundo programa desde 0x7 a 0xE. Y 0x7, 0x8, 0x9, 0xA, 0xB, 0xC almacenan
 ```
 
 5. Una mejora que le podríamos hacer a esta computadora es duplicar la cantidad de memoria, pasar de 16 bytes a 32 bytes. ¿Cómo lo harían manteniendo la longitud de las instrucciones en 8 bits? ¿Qué partes de la CPU habría que modificar y cómo?
+
+Tendria que cambiando unicamente el tamaño de la RAM por una de 32 direcciones. 
+
+Habria que modificar el registro PC que ahora manipula 5 bits en vez de 4 bits. Los multiplexores y los cables de por medio tambien manipularian los 5 bits. Y la entrada de del buss de direcciones de O/I cambiaria a 5 bits. 
